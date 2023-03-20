@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+import time
 
 
 class WebElement:
@@ -11,7 +12,11 @@ class WebElement:
         self.find_element().click()
 
     def find_element(self):
+        time.sleep(3)
         return self.driver.find_element(By.CSS_SELECTOR, self.locator)
+
+    def get_text(self):
+        return str(self.find_element().text)
 
     def exit(self):
         try:
