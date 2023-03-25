@@ -15,3 +15,13 @@ def test_check_text_info(browser):
     demo_qa_page.visit()
     demo_qa_page.btn_elements.click()
     assert demo_qa_element_page.info_text_element.get_text() == 'Please select an item from left to start practice.'
+
+
+def test_page_elements(browser):
+    demo_qa_element_page = ElementsPage(browser)
+
+    demo_qa_element_page.visit()
+    assert demo_qa_element_page.center_text_element.get_text() == 'Elements'
+    assert demo_qa_element_page.icon_element.exist()
+    assert demo_qa_element_page.btn_sidebar_first.exist()
+    assert demo_qa_element_page.btn_sidebar_first_textbox.exist()
