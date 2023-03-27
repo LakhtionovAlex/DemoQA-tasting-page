@@ -12,7 +12,7 @@ class WebElement:
         self.find_element().click()
 
     def find_element(self):
-        time.sleep(3)
+        time.sleep(1)
         return self.driver.find_element(By.CSS_SELECTOR, self.locator)
 
     def get_text(self):
