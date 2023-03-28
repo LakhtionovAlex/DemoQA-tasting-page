@@ -7,9 +7,14 @@ class ElementsPage(BasePage):
         self.base_url = 'https://demoqa.com/elements'
         super().__init__(driver, self.base_url)
 
+        self.pageData = {
+            "title": "DEMOQA"
+        }
+
         self.info_text_element = WebElement(driver, '.col-md-6')
         self.center_text_element = WebElement(driver, 'div.pattern-backgound.playgound-header > div')
         self.icon_element = WebElement(driver, 'header > a > img')
         self.btn_sidebar_first = WebElement(driver, 'div:nth-child(1) > span > div')
         self.btn_sidebar_first_textbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-0 > span')
         self.btn_sidebar_first_checkbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-1 > span')
+        self.btns_first_menu = WebElement(driver, 'div:nth-child(1) > div > ul > li')
