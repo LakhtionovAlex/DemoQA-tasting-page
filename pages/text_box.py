@@ -12,4 +12,7 @@ class TextBox(BasePage):
         }
 
         self.user_name = WebElement(driver, '#userName')
-
+        self.current_address = WebElement(driver, '#currentAddress')
+        self.submit = WebElement(driver, '#submit')
+        self.received_name = WebElement(driver, '#name')
+        self.received_address = WebElement(driver, '#output > div > #currentAddress')

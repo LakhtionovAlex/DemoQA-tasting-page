@@ -22,3 +22,5 @@ class FormPage(BasePage):
         self.hobbies = WebElement(driver, '#hobbies-checkbox-1')
         self.current_address = WebElement(driver, '#currentAddress')
         self.user_form = WebElement(driver, '#userForm')
+        self.state = WebElement(driver, '#state > div > div.css-1wy0on6')
+        self.state1 = WebElement(driver, '#state > div > div.css-1hwfws3 > div.css-1uccc91-singleValue')

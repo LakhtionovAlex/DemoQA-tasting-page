@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
 
 
 class WebElement:
@@ -53,3 +54,7 @@ class WebElement:
         if len(value) > 0:
             return value
         return True
+
+    def arrow_down(self):
+        self.find_element().send_keys(Keys.ARROW_DOWN)
+        self.find_element().send_keys(Keys.ENTER)
