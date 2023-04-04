@@ -1,5 +1,4 @@
 import allure
-
 from pages.text_box import TextBox
 
 
