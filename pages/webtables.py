@@ -37,3 +37,4 @@ class WebTables(BasePage):
         self.title_delete = WebElement(driver, '[title="Delete"]')
         self.rows_found = WebElement(driver, 'div.rt-noData')
         self.number_page = WebElement(driver, 'input[type=number]')
+        self.string_sort = WebElement(driver, 'div.rt-thead.-header > div > div')

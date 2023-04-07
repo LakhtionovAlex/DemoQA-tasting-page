@@ -7,7 +7,7 @@ import pytest
 @allure.title('Page fill check')
 @allure.feature('Checking test statuses')
 @allure.story('Checking for Adding and Removing Records')
-# @pytest.mark.xfail(condition=False, reason='Skipped test')
+@pytest.mark.xfail(condition=False, reason='Skipped test')
 def test_web_tables(browser):
     web_tables_page = WebTables(browser)
     web_tables_page.visit()
