@@ -1,6 +1,5 @@
 from pages.slider import Slider
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
 import time
 import pytest
 import allure
